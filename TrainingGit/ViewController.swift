@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnChangeText(_ sender: Any) {
-        textlable.text = "Why you navigation to next page"
+        textlable.text = "TEST TEST"
     }
     
 }
