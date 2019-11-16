@@ -33,22 +33,49 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKa-bi-ifT">
+                                <rect key="frame" x="20" y="812" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YIg-6O-5kM"/>
+                                </constraints>
+                                <state key="normal" title="next page"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="LHG-FP-yVR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RFg-Lu-mqn"/>
                             <constraint firstItem="LHG-FP-yVR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VWb-KI-DIH"/>
+                            <constraint firstItem="HKa-bi-ifT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hvg-mu-cu8"/>
+                            <constraint firstItem="HKa-bi-ifT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ub1-bN-yeI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HKa-bi-ifT" secondAttribute="trailing" constant="20" id="xgs-Yx-hY7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="qOk-Dm-9oX"/>
                     <connections>
                         <outlet property="textlable" destination="qbo-Dc-Yao" id="4oO-G3-gVD"/>
+                        <segue destination="QOV-wK-zVO" kind="show" id="PzM-Is-ycL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="132.58928571428572"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="udn-Tl-lyu">
+            <objects>
+                <viewController id="QOV-wK-zVO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9O5-Gw-Frc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="daH-ZP-1h2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mqi-31-2F5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZd-dW-QZG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eIt-ob-YD1">
